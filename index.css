@@ -41,7 +41,6 @@
   padding: 5px 25px;
   font-weight: 600;
   cursor: pointer;
-
 }
 .categoryName_active {
   background-color: #000000;
@@ -54,13 +53,14 @@
   flex-wrap: nowrap; /* prevents cards from wrapping */
   overflow-x: auto; /* enables horizontal scrolling */
   -webkit-overflow-scrolling: touch; /* improves touch scrolling on iOS devices */
-  
+
   scroll-behavior: smooth; /* adds smooth scrolling effect */
   margin: auto;
   overflow: auto;
-    white-space: nowrap;
-    padding: 0 1rem;
-}Div
+  white-space: nowrap;
+  padding: 0 1rem;
+}
+Div
 /* Hide scrollbar for Chrome, Safari and Opera */
 .FeatureMainCartDiv::-webkit-scrollbar {
   display: none;
@@ -68,10 +68,9 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .FeatureMainCartDiv {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .categoryDiv::-webkit-scrollbar {
@@ -80,8 +79,8 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .categoryDiv {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .FeatureCart {
@@ -184,55 +183,53 @@
 
 /* /////////////////////////////// */
 
-
-.flex{
+.flex {
   display: flex;
-
 }
-.flex>div{
+.flex > div {
   width: 50%;
   /* height: 20rem; */
   /* border: 2px solid black; */
   padding: 1rem;
 }
 
-.flex .imageDiv{
+.flex .imageDiv {
   display: flex;
   justify-content: right;
   padding-right: 3rem;
 }
-.revarse .imageDiv{
+.revarse .imageDiv {
   /* flex-direction: row-reverse; */
   justify-content: left;
   padding-left: 3rem;
 }
 
-.blueColor{
-  color: #4D70EC;
+.blueColor {
+  color: #4d70ec;
 }
 
-.contentDiv{
+.contentDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.contentDiv >p{
+.contentDiv > p {
   margin: 1.4rem 0;
   font-size: 1.3rem;
 }
 
-.contentDiv >h1{
+.contentDiv > h1 {
   font-size: 2.1rem;
 }
 
-.maxWidth1{
+.maxWidth1 {
   max-width: 1200px;
   margin: auto;
   padding: 2rem 0;
 }
 
-.imageDiv img{
+.imageDiv img {
   width: 100%;
 }
 .contentDiv a {
@@ -242,25 +239,92 @@
   border-bottom: 2px solid black;
   padding-bottom: 0.5rem;
   width: fit-content;
- 
 }
-.contentDiv a p{
+.contentDiv a p {
   font-weight: 600;
   color: #000000;
   font-style: italic;
 }
-.contentDiv a div{
+.contentDiv a div {
   height: 15px;
   width: 14px;
   margin-left: 5px;
 }
-.contentDiv a div>img{
+.contentDiv a div > img {
   width: 100%;
 }
 
+/* CSs for FAqs Sections  */
+.faqs {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+}
+
+.accordion-button {
+  background-color: #f7f9ff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 20px 20px 0px 0px;
+  padding: 1.4rem 20px;
+}
+
+.accordion-button:hover {
+  background-color: #eff1fa;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(190, 190, 190, 0.25);
+  border-radius: 0px 0px 20px 20px;
+
+  /* padding: 2rem 20px; */
+}
+
+.accordion-content p{
+  margin: 2rem 20px;
+}
+
+.accordion-item.active .accordion-button {
+  background-color: #eff1fa;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+  /* padding: 2rem 20px; */
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-item.active .arrow {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transform: rotate(180deg);
+}
+.arrow {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+}
 
 /* for mobile view  */
-
 
 @media screen and (max-width: 900px) {
   .categoryDiv {
@@ -268,27 +332,24 @@
     white-space: nowrap;
     justify-content: flex-start;
   }
- 
 }
 
-
 @media screen and (max-width: 786px) {
-  .flex>div{
+  .flex > div {
     width: 100%;
   }
-  .flex{
+  .flex {
     flex-wrap: wrap;
   }
-  .revarse{
+  .revarse {
     flex-direction: column-reverse;
   }
-  .flex .imageDiv{
+  .flex .imageDiv {
     padding: 1rem;
     justify-content: center;
     align-items: center;
   }
-  .contentDiv >h1{
+  .contentDiv > h1 {
     font-size: 1.9rem;
   }
-
 }
