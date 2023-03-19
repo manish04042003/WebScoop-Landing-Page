@@ -6,9 +6,10 @@
 }
 .TopmainDiv {
   width: 100%;
-  height: 20rem;
-  background-color: aqua;
-  border: 1px solid gray;
+  margin-bottom: 2rem !important;
+  /* height: 20rem;
+  background-color: aqua; */
+  /* border: 1px solid gray; */
 }
 .maxWidth {
   max-width: 1400px;
@@ -18,7 +19,7 @@
 
 .featureDiv h1 {
   text-align: center;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 .categoryDiv {
   display: flex;
@@ -323,6 +324,111 @@ Div
 .arrow {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
 }
+.faqs>h1{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+
+/* css for fotter  */
+.FooterDiv{
+  border-top: 3px solid #F5F5F5;
+
+}
+.footer {
+  background: #FFFFFF;
+  /* border: 1px solid #FFFFFF; */
+  padding: 50px 0;
+}
+
+.footer-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  box-sizing: border-box;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.logoContiner-col >div{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: row;
+}
+.logoContiner-col >div >h5{
+  position: relative;
+  right: -42px;
+  max-width: 300px;
+}
+.logoContiner-col >div img{
+  /* width: 70%; */
+  transform: scale(0.8);
+}
+.footer-col h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-col ul li{
+  margin-bottom: 12px;
+
+}
+.footer-col ul li a {
+  color: black;
+  text-decoration: none;
+}
+.socialMediaDiv>div ul{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* flex-direction: column; */
+}
+.socialMediaDiv>div ul img{
+ width: 50%;
+
+}
+.endDiv{
+  
+background: #1C2D40;
+border-radius: 0px 0px 20px 20px;
+/* height: 70px; */
+padding: 1.5rem 1rem;
+color: white;
+/* display: flex; */
+/* justify-content: center; */
+align-items: center;
+}
+.endDiv >div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 786px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+    align-items: normal;
+  }
+}
+
 
 /* for mobile view  */
 
@@ -351,5 +457,11 @@ Div
   }
   .contentDiv > h1 {
     font-size: 1.9rem;
+  }
+  .endDiv >div p{
+    font-size: 0.6rem;
+  }
+  .endDiv{
+    padding: 1rem;
   }
 }
