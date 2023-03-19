@@ -182,6 +182,83 @@
   width: 20px;
 }
 
+/* /////////////////////////////// */
+
+
+.flex{
+  display: flex;
+
+}
+.flex>div{
+  width: 50%;
+  /* height: 20rem; */
+  /* border: 2px solid black; */
+  padding: 1rem;
+}
+
+.flex .imageDiv{
+  display: flex;
+  justify-content: right;
+  padding-right: 3rem;
+}
+.revarse .imageDiv{
+  /* flex-direction: row-reverse; */
+  justify-content: left;
+  padding-left: 3rem;
+}
+
+.blueColor{
+  color: #4D70EC;
+}
+
+.contentDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentDiv >p{
+  margin: 1.4rem 0;
+  font-size: 1.3rem;
+}
+
+.contentDiv >h1{
+  font-size: 2.1rem;
+}
+
+.maxWidth1{
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.imageDiv img{
+  width: 100%;
+}
+.contentDiv a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.5rem;
+  width: fit-content;
+ 
+}
+.contentDiv a p{
+  font-weight: 600;
+  color: #000000;
+  font-style: italic;
+}
+.contentDiv a div{
+  height: 15px;
+  width: 14px;
+  margin-left: 5px;
+}
+.contentDiv a div>img{
+  width: 100%;
+}
+
+
 /* for mobile view  */
 
 
@@ -191,8 +268,27 @@
     white-space: nowrap;
     justify-content: flex-start;
   }
-  .FeatureMainCartDiv > div {
-    display: inline-block;
-    /* background-color: #000000; */
+ 
+}
+
+
+@media screen and (max-width: 786px) {
+  .flex>div{
+    width: 100%;
   }
+  .flex{
+    flex-wrap: wrap;
+  }
+  .revarse{
+    flex-direction: column-reverse;
+  }
+  .flex .imageDiv{
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentDiv >h1{
+    font-size: 1.9rem;
+  }
+
 }
