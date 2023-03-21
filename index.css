@@ -311,6 +311,9 @@ Div
 }
 
 /* Testimonial  */
+.slick-arrow{
+  display: none !important;
+}
 .testimonial {
   background-color: #e4edff;
   padding-top: 3rem;
@@ -509,8 +512,8 @@ Div
 }
 .logoContiner-col > div > h5 {
   position: relative;
-  right: -42px;
-  max-width: 300px;
+  right: -13px;
+  max-width: 230px;
 }
 .logoContiner-col > div img {
   /* width: 70%; */
