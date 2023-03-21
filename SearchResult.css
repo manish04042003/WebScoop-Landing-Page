@@ -1,0 +1,27 @@
+.FeatureCart{
+    margin-bottom: 1.5rem;
+}
+.TopmainDiv{
+    position: relative;
+}
+.ImageDivFroResultPage{
+    height: 321px;
+   
+}
+.ImageDivFroResultPage>div{
+    overflow: hidden;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.ImageDivFroResultPage img{
+    height: 100%;
+}
+.search-container{
+    max-width: 600px;
+    /* position: fixed; */
+    position: relative;
+margin-top: -30px;
+width: 80% !important;
+}

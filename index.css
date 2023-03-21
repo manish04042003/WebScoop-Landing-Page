@@ -84,6 +84,61 @@ Div
   scrollbar-width: none; /* Firefox */
 }
 
+/* --------------------------------------------search css  */
+.search-container {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.search-container span {
+  margin: auto;
+}
+
+#search-bar {
+  margin: 0 auto;
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+  font-size: 1rem;
+  outline: none;
+  padding-left: 50px;
+  border: 1.5px solid #979797;
+  border-radius: 50px;
+}
+
+#search-bar:focus {
+  /* border: 1px solid #008abf; */
+  transition: 0.35s ease;
+}
+
+/* #search-bar::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+} */
+
+#search-bar::-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+#search-bar:-ms-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+.search-icon {
+  position: relative;
+  float: left;
+  width: 75px;
+  height: 75px;
+  top: -38px;
+  left: 16px;
+  color: #7b7979;
+  /* right: -45px; */
+}
+/* ------------------------------------------------- search css end  */
+
 .FeatureCart {
   margin: 0 1.1rem;
   width: 293px !important;
@@ -256,6 +311,26 @@ Div
 }
 
 /* Testimonial  */
+.testimonial {
+  background-color: #e4edff;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.testimonialHeading {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 1.6rem;
+  /* word-spacing: ; */
+}
+.RedColor {
+  color: #b23e32;
+}
+.slick-next::before {
+  font-size: 40px !important;
+}
+.slick-prev::before {
+  font-size: 40px !important;
+}
 .slider {
   border: 2px solid black;
   display: flex;
@@ -264,65 +339,70 @@ Div
 .box {
   min-height: 10rem;
   padding: 1rem;
-
 }
 .testimonialContent {
-  max-width: 379px;
+  /* max-width: 379px; */
   width: 100%;
   /* height: 271px; */
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 20px;
   margin: auto;
-  padding: 1rem;
+  padding: 1.5rem;
+  /* box-shadow: 0px 10px 30px rgba(190, 190, 190, 0.25); */
+  background-color: white;
+  /* padding-left: 1.5rem; */
 }
 
-.meassageDiv{
+.meassageDiv {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  
-  color: #000000;
-text-align: center;  
-margin-top: 0.5rem;
-margin-bottom: 1.5rem;
-}
-.personInfo{
 
+  color: #000000;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-.testimonialImageDiv{
- height: 60px;
- width: 60px;
- margin: auto;
- object-fit: contain;
-    overflow: hidden;
-border-radius: 50%;
+.personInfo {
+  display: flex;
+  /* justify-content: ; */
+  align-items: center;
+  position: relative;
 }
-.testimonialImageDiv >img{
+.testimonialImageDiv {
+  height: 60px;
+  width: 60px;
+  margin: 0 10px 0 0;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.testimonialImageDiv > img {
   width: 100%;
 }
-.TestimnialPersonName{
+.TestimnialPersonName {
   font-weight: 600;
   font-size: 18px;
-  line-height: 21px;
-  
+  /* line-height: 21px; */
+
   color: #000000;
 
-  text-align: center;
-  margin-top: 11px;
-  
+  /* text-align: center; */
+  /* margin-top: 11px; */
 }
-.testimonialPersonPost{
+.testimonialPersonPost {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  text-align: center;
+  /* line-height: 19px; */
+  /* text-align: center; */
 }
-.meassageDiv >img{
-  position: relative;
-  margin-bottom: 10px;
+.svgDiv {
+  position: absolute;
+  right: 0;
+  transform: rotate(180);
+  fill: #b23e32;
 }
 
-/* CSs for FAqs Sections  */
+/*--------------------------------------- CSs for FAqs Sections  */
 .faqs {
   max-width: 800px;
   margin: 0 auto;
