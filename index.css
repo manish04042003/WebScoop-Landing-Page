@@ -586,6 +586,58 @@ Div
   justify-content: space-between;
   align-items: center;
 }
+/* Other file css */
+.mainContainer{
+  margin-top: 5rem;
+  /* margin-bottom: 4rem; */
+  min-height: 70vh;
+}
+.mainContainer h3{
+  color: #4D4D4D;
+  font-weight: 500;
+}
+.mainContainer h1{
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+.line{
+  width: 100%;
+  margin: 1rem auto;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 10px;
+}
+.mainContainer ul{
+  margin-left: 1.5rem;
+}
+.contactusDiv{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.contactusDiv >div{
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 24px;
+  padding: 40px 40px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 48%;
+  height: 16rem;
+  margin-bottom: 3rem;
+}
+
+.contactusDiv >div>h2{
+  margin-bottom: 2rem;
+}
+.contactusDiv >div>a{
+  margin-bottom: 0.6rem;
+  text-decoration: none;
+  color: #008060;
+}
+
 
 @media (max-width: 786px) {
   .footer-container {
@@ -633,5 +685,11 @@ Div
   }
   .endDiv {
     padding: 1rem;
+  }
+  .mainContainer{
+    margin-top: 5rem;
+  }
+  .contactusDiv >div{
+    width: 100%;
   }
 }

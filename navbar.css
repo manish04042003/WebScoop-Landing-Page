@@ -266,6 +266,9 @@ align-items: center;
     width: 70%;
 
 }
+.rightNav{
+  display: flex;
+}
 @media screen and (max-width: 786px) {
     .navContennt{
         width: 100%;
@@ -285,8 +288,11 @@ align-items: center;
     .navContennt h1{
       padding-top: 0rem;
     }
-    .signupdiv{
+    /* .signupdiv{
         display: none;
+    } */
+    .signupdiv >p{
+      display: none;
     }
     .navLogoDiv{
         margin-left: -10px;
