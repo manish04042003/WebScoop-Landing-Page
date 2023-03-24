@@ -1,0 +1,49 @@
+.mainLoginDiv{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    min-height: 100vh;
+    display: flex;
+}
+main>div{
+    width: 50%;
+    display: inline-block;
+    min-height: 100vh;
+}
+.logoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.LodoimageDiv{
+    height: 60px;
+    width: 60px;
+}
+.LodoimageDiv img{
+    width: 100%;
+    height: 100%;
+}
+
+.MainlogodivBox{
+    height: 40rem;
+    background-color: aqua;
+
+}
+
+
+@media screen and (max-width: 786px) {
+    .mainLoginDiv{
+        padding: 1rem;
+    }
+    .mainLoginDiv>div{
+        width: 100%;
+    }
+}
