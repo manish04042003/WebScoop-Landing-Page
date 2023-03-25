@@ -27,11 +27,16 @@ main>div {
     left: 20px;
 }
 
-.LogoimageDiv {
-    height: 60px;
-    width: 60px;
+.LogoimageDiv{
+    height: 35px;
+    width: 35px;
 }
-
+.logoDiv h1{
+    font-size: 1.2rem;
+}
+.MainlogodivBox{
+    margin-top: 40px;
+}
 .LogoimageDiv img {
     width: 100%;
     height: 100%;
@@ -42,7 +47,18 @@ main>div {
 }
 
 .greenScreen {
-    background-color: green;
+    background-color: #756aff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.greenScreen div{
+    width: 80%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.greenScreen div img{
+    width: 100%;
 }
 
 .MainlogodivBox>h1 {
@@ -139,6 +155,9 @@ input:focus {
     color: grey;
 }
 
+.Forget{
+    margin-bottom: 2rem;
+}
 @media screen and (max-width: 786px) {
     .mainLoginDiv {
         padding: 1rem;
@@ -161,11 +180,11 @@ input:focus {
         gap: 7px;
     }
     .LogoimageDiv{
-        height: 40px;
-        width: 40px;
+        height: 35px;
+        width: 35px;
     }
     .logoDiv h1{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .mainLoginDiv {
         align-items: flex-start;

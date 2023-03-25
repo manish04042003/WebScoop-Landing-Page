@@ -43,22 +43,31 @@
                     <input type="email">
                     <label for="Password">Password</label>
                     <input type="password">
-                    <!-- <p>Forget password</p> -->
+                    <p onclick="sendEmail()" class="Forget">Forget password</p>
                     <button type="submit">Login</button>
                 </form>
                 <h3 class="or">OR</h3>
 
                 <div class="Google">
                     <div class="googleImageDiv"><img src="/images/icons8-google-48.png" alt=""></div>
-                    <div><h4>Continue with Google</h4></div>
+                    <div>
+                        <h4>Continue with Google</h4>
+                    </div>
                 </div>
-                <div class="youdont"><h5>You Dont have an account ye? <span class="linkText">Sign up</span></h5></div>
+                <div class="youdont">
+                    <h5>You Dont have an account ye? <span class="linkText">Sign up</span></h5>
+                </div>
 
-                <center><h5 class="greyColor">By Creating account you agree to our <span class="linkText">Terms of Service</span> and <span class="linkText">Privacy Policy</span></h5></center>
+                <center>
+                    <h5 class="greyColor">By Creating account you agree to our <span class="linkText">Terms of
+                            Service</span> and <span class="linkText">Privacy Policy</span></h5>
+                </center>
             </div>
         </div>
         <div class="greenScreen">
-
+            <div>
+                <img src="/images/Postso-default-card.png" alt="">
+            </div>
         </div>
     </main>
 
@@ -80,6 +89,24 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="/index.js"></script>
+    <script>
+        function sendEmail() {
+            console.log('function run')
+            fetch("http://localhost:4400/sendEmail", {
+                method: "POST",
+                body: JSON.stringify({
+                    userId: 1,
+                    title: "Fix my bugs",
+                    completed: false
+                }),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+            })
+                .then((response) => response.json())
+                .then((json) => console.log(json));
+        }
+    </script>
 </body>
 
 </html>
