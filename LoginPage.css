@@ -1,19 +1,22 @@
-.mainLoginDiv{
+.mainLoginDiv {
     padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main{
+
+main {
     min-height: 100vh;
     display: flex;
 }
-main>div{
+
+main>div {
     width: 50%;
     display: inline-block;
     min-height: 100vh;
 }
-.logoDiv{
+
+.logoDiv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,27 +26,149 @@ main>div{
     top: 20px;
     left: 20px;
 }
-.LodoimageDiv{
+
+.LogoimageDiv {
     height: 60px;
     width: 60px;
 }
-.LodoimageDiv img{
+
+.LogoimageDiv img {
     width: 100%;
     height: 100%;
 }
 
-.MainlogodivBox{
-    height: 40rem;
-    background-color: aqua;
+.MainlogodivBox {
+    /* height: 40rem; */
+}
+
+.greenScreen {
+    background-color: green;
+}
+
+.MainlogodivBox>h1 {
+    text-align: center;
+}
+
+.MainlogodivBox>h5 {
+    text-align: center;
+    color: grey;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.MainlogodivBox form {
+    display: flex;
+    flex-direction: column;
 
 }
 
+.MainlogodivBox form input {
+    margin-bottom: 1rem;
+    border: 2px solid grey;
+    height: 2.5rem;
+    border-radius: 5px;
+    padding: 4px;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid rgb(130, 16, 236);
+}
+
+.MainlogodivBox form label {
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+}
+
+.MainlogodivBox form>p {
+    text-align: right;
+    margin-top: -9px;
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.MainlogodivBox form>button {
+    background-color: rgb(53, 53, 241);
+    height: 2.5rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.or {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.Google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    gap: 10px;
+    height: 2.5rem;
+    border-radius: 5px;
+    /* padding: 4px; */
+    cursor: pointer;
+}
+
+.googleImageDiv {
+    height: 1.7rem;
+
+
+}
+
+.googleImageDiv img {
+    height: 100%;
+}
+
+.linkText{
+    color: blue;
+    cursor: pointer;
+}
+
+.youdont{
+    color: grey;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.greyColor{
+    color: grey;
+}
 
 @media screen and (max-width: 786px) {
-    .mainLoginDiv{
+    .mainLoginDiv {
         padding: 1rem;
     }
-    .mainLoginDiv>div{
+
+    .mainLoginDiv>div {
         width: 100%;
     }
+    .greenScreen{
+        display: none;
+    }
+    main>div{
+        width: 100%;
+    }
+    .MainlogodivBox{
+        margin-top: 80px;
+    }
+    .logoDiv {
+        justify-content: left;
+        gap: 7px;
+    }
+    .LogoimageDiv{
+        height: 40px;
+        width: 40px;
+    }
+    .logoDiv h1{
+        font-size: 1.5rem;
+    }
+    .mainLoginDiv {
+        align-items: flex-start;
+    }
+    
 }
