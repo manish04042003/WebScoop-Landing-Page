@@ -29,19 +29,37 @@ window.onclick = function(event) {
 
 
 // function for send email 
+
+$( "#ForgetPassword" ).submit(function( event ) {
+    event.preventDefault();
+    sendEmail();
+  });
+
+
 function sendEmail() {
     console.log('function run')
+    let ForgetEmail = document.getElementById('EmailForForget').value;
+    let UserName = document.getElementById('UserNameForPassword').value;
+   
+let obj = {
+    email : ForgetEmail,
+    username : UserName
+}
+console.log(obj)
+    console.log(ForgetEmail,UserName)
     fetch("http://localhost:4400/sendEmail", {
         method: "POST",
-        body: JSON.stringify({
-            userId: 1,
-            title: "Fix my bugs",
-            completed: false
-        }),
+        body: JSON.stringify(obj),
         headers: {
             "Content-type": "application/json; charset=UTF-8"
         }
     })
         .then((response) => response.json())
-        .then((json) => console.log(json));
+        .then((json) => {
+            console.log(json)
+            document.getElementById('EmailForForget').value = null
+            document.getElementById('UserNameForPassword').value = null
+        }
+           
+        );
 }

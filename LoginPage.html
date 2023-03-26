@@ -28,18 +28,17 @@
 
     <div id="ForgetModal" class="Forgetmodal">
 
-        <!-- Modal content -->
         <div class="Forget-modal-content">
             <span class="Forgetclose">&times;</span>
             <div class="ForgetBox" >
                 <h1>Forgot your password?</h1>
                 <p>To reset your password, please enter the email address and user name of your Topmate account.To reset your password, please enter the email address of your Topmate account.</p>  
-                <form action="">
+                <form action="" id="ForgetPassword" >
                     <label for="email">Email</label>
-                    <input type="email">
+                    <input id="EmailForForget" type="email" required>
                     <label for="username">User Name</label>
-                    <input type="password">
-                    <button>Reset Password</button>
+                    <input id="UserNameForPassword" type="text" required>
+                    <button type="submit">Reset Password</button>
                 </form>
             </div>
         </div>
