@@ -26,6 +26,26 @@
 
 <body>
 
+    <div id="ForgetModal" class="Forgetmodal">
+
+        <!-- Modal content -->
+        <div class="Forget-modal-content">
+            <span class="Forgetclose">&times;</span>
+            <div class="ForgetBox" >
+                <h1>Forgot your password?</h1>
+                <p>To reset your password, please enter the email address and user name of your Topmate account.To reset your password, please enter the email address of your Topmate account.</p>  
+                <form action="">
+                    <label for="email">Email</label>
+                    <input type="email">
+                    <label for="username">User Name</label>
+                    <input type="password">
+                    <button>Reset Password</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
 
     <main>
         <div class="mainLoginDiv">
@@ -43,7 +63,7 @@
                     <input type="email">
                     <label for="Password">Password</label>
                     <input type="password">
-                    <p onclick="sendEmail()" class="Forget">Forget password</p>
+                    <p id="myBtnForForgetMoadal" class="Forget">Forget password</p>
                     <button type="submit">Login</button>
                 </form>
                 <h3 class="or">OR</h3>
@@ -89,24 +109,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="/index.js"></script>
-    <script>
-        function sendEmail() {
-            console.log('function run')
-            fetch("http://localhost:4400/sendEmail", {
-                method: "POST",
-                body: JSON.stringify({
-                    userId: 1,
-                    title: "Fix my bugs",
-                    completed: false
-                }),
-                headers: {
-                    "Content-type": "application/json; charset=UTF-8"
-                }
-            })
-                .then((response) => response.json())
-                .then((json) => console.log(json));
-        }
-    </script>
+    <script src="/Loginpage.js"></script>
 </body>
 
 </html>

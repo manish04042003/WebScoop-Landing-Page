@@ -105,12 +105,13 @@ input:focus {
 }
 
 .MainlogodivBox form>button {
-    background-color: rgb(53, 53, 241);
+    background-color: black;
     height: 2.5rem;
     color: white;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    font-size: larger;
 }
 
 .or {
@@ -157,7 +158,111 @@ input:focus {
 
 .Forget{
     margin-bottom: 2rem;
+    cursor: pointer;
 }
+
+
+
+/* ------------------------------------------------Forget Modal css - */
+.Forgetmodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal Content/Box */
+  .Forget-modal-content {
+    background-color: #fefefe;
+    /* margin: 15% auto;  */
+    padding: 1.5rem;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 30rem;
+    /* height: 20rem; */
+    padding-bottom: 3rem;
+    border-radius: 20px;
+    
+  }
+  
+  /* The Close Button */
+  .Forgetclose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -10px;
+  }
+  
+  .Forgetclose:hover,
+  .Forgetclose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .ForgetBox>h1 {
+    margin-bottom: 2rem;
+}
+
+.ForgetBox>h5 {
+    text-align: center;
+    color: grey;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.ForgetBox form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ForgetBox form input {
+    margin-bottom: 1rem;
+    border: 2px solid grey;
+    height: 2.5rem;
+    border-radius: 5px;
+    padding: 4px;
+    outline: none;
+}
+
+
+.ForgetBox form label {
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+}
+
+.ForgetBox >p {
+    color: grey;
+    /* font-size: 0.9rem; */
+    /* margin: 1rem 0; */
+    margin-bottom: 1.4rem;
+}
+
+.ForgetBox form>button {
+    background-color: black;
+    height: 2.5rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    margin-top: 1rem;
+    /* margin-bottom: 1rem; */
+}
+
+  /* -------------------------------------- forget modak css end  */
 @media screen and (max-width: 786px) {
     .mainLoginDiv {
         padding: 1rem;
