@@ -312,6 +312,7 @@ Div
 
 .imageDiv img {
   width: 100%;
+  transform: scale(0.9);
 }
 .contentDiv a {
   display: flex;
@@ -335,7 +336,42 @@ Div
   width: 100%;
 }
 
-/* Testimonial  */
+/* ---------------------------------------Explore Pro  */
+.ExplorePro{
+  background-color: #FFFAE1;
+  padding: 2rem 0;
+
+}
+.exploreProBtn{
+  height: 64px;
+    border-radius: 6px;
+    box-shadow: none;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    background-color: #D68F67;
+    color: white;
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.brownColor{
+  color: #B23E32;
+}
+.ExplorePro h1{
+  max-width: 30rem;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+}
+
+/* -------------------------Testimonial  */
 .slick-arrow{
   display: none !important;
 }
