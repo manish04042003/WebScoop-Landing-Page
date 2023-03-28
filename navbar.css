@@ -201,6 +201,10 @@
   width: 100%;
   transform: scale(1.5);
 }
+#navimagepro{
+  width: 100%;
+  transform: scale(1);
+}
 .navmainDiv{
   position: fixed;
   width: 100%;
@@ -268,7 +272,7 @@ align-items: center;
 }
 .rightNav{
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
 }
 @media screen and (max-width: 786px) {
     .navContennt{
