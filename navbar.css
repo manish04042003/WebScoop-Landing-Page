@@ -287,6 +287,9 @@ align-items: center;
     .navContennt h1{
         font-size: 3rem;
     }
+    .navContennt h1 span{
+      font-size: 3rem;
+  }
     .navOptions{
         display: none;
     }
