@@ -1,0 +1,48 @@
+.step {
+    display: none;
+  }
+  
+  .step.current {
+    display: block;
+  }
+  .mainContainer{
+    max-width: 30rem !important;
+  }
+  
+  .boxnavigation{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .boxline{
+    width: 30%;
+    height: 6px;
+    background-color: #EDEAEA;
+    border-radius: 20px;
+  }
+  .boxline.current {
+    background: #80ABFF;
+    transition: all 0.5s;
+  }
+  #div1 h3{
+    color: black !important;
+    font-weight: bold;
+  }
+  #div1,#div2,#div3{
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+  .next-btn,.done-btn{
+    display: block;
+    margin: auto;
+    width: 98%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    border-radius: 10px;
+    /* max-width: 300px; */
+    cursor: pointer;
+  }

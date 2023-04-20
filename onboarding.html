@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="/onboarding.css">
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,27 +26,7 @@
 
 <body>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-        <div id="menu-box" class="modal-content">
-            <span class="close">&times;</span>
-            <div class="menu-ele">
-                <p>About US</p>
-            </div>
-            <div class="menu-ele">
-                <p>Pricing</p>
-            </div>
-            <div class="menu-ele">
-                <p>Sign up</p>
-            </div>
-            <div class="menu-ele">
-                <p>Login</p>
-            </div>
-        </div>
-
-    </div>
-
+  
 
 
 
@@ -59,35 +40,18 @@
                             <h2>Webscoop</h2>
                         </div>
                         <div class="navOptions">
-                            <div>
-                                <a href="">
-                                    <p>About</p>
-                                </a>
-
-                            </div>
-                            <div>
-                                <a href="">
-                                    <p>FAQs</p>
-                                </a>
-
-                            </div>
-                            <div>
-                                <a href="">
-                                    <p>Pro</p>
-                                </a>
-
-                            </div>
+                          
                         </div>
 
                     </div>
                     <div class="rightNav">
-                        <div class="signupdiv">
+                        <!-- <div class="signupdiv">
                             <p>Sign in</p>
                             <div>
                                 <p>Sign up</p>
                             </div>
                         </div>
-                        <div id="myBtn" class="menu"><img src="/images/icons8-menu-rounded-50.png" alt=""></div>
+                        <div id="myBtn" class="menu"><img src="/images/icons8-menu-rounded-50.png" alt=""></div> -->
                     </div>
 
                 </div>
@@ -95,22 +59,25 @@
         </div>
 
         <div class="maxWidth mainContainer">
-            <center>
-                <h1>Pricing</h1>
-                <div class="line">
-                </div>
-                
-            </center>
-            <h3>There is no registration / sign-up fees on the platform. Users who turned their profiles into PRO profiles and lists their services have to pay 5%
-                commission(exclusive taxes) on every booking.<br>No commissions will be deducted in case of:<br>
-                <ul>
-                    <li>A PRO member gets an order for a service that he/she has listed for free.</li>
-                </ul>
-                 <br> <br>
-
-                In case of any query/iconvinience in commission deductions one can raise a support request at: <br><br>
-                <a href="https://webscoop.freshdesk.com/support/tickets/new">New Support Ticket</a> and get issue resolved within 2 days.
-            </h3>
+            
+            <div class="boxnavigation">
+                <div class="boxline current"></div>
+                <div class="boxline"></div>
+                <div class="boxline"></div>
+            </div>
+            <div id="div1" class="step">
+                <h3>Let’s Quickly Setup Your Creator Profile!</h3>
+                <button class="next-btn">Next 1</button>
+            </div>
+              
+            <div id="div2" class="step">
+               <h3>Add few basic details for a whole new personalized experience</h3>
+                <button class="next-btn">Next 2</button>
+            </div>
+              
+            <div id="div3" class="step">
+                <button class="done-btn">Finish</button>
+            </div>              
         </div>
 
 
@@ -217,7 +184,8 @@
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="/index.js"></script>
+    <!-- <script src="/index.js"></script> -->
+    <script src="/onbooarding.js"></script>
 </body>
 
 </html>
