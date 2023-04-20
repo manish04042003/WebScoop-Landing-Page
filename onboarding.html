@@ -19,6 +19,8 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- Testimonial  -->
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+
     <title>Webscoop</title>
     </script>
 </head>
@@ -27,7 +29,15 @@
 <body>
 
   
+<!-- The Modal -->
+<div id="myModalCon" class="modalCon">
 
+    <!-- Modal content -->
+    <div class="modal-content-Con">
+      <p>Some text in the Modal..</p>
+    </div>
+  
+  </div>
 
 
 
@@ -72,11 +82,46 @@
               
             <div id="div2" class="step">
                <h3>Add few basic details for a whole new personalized experience</h3>
+               <form action="">
+                <div class="inputcomponent">
+                    <label for="">Username*</label>
+                    <div class="input" id="title" style="padding: 0;display:flex">
+                        <div id="urlbox">https://webscoop.in/</div>
+                        <input id="urlinput" name="username" onkeyup="usernamecheck();" required="">
+                    </div>
+                </div>
+                <div id="usernameerror">
+                    Sorry! This Username Is Already Taken.
+                 </div>
+                 <div id="usernamesuccess">
+                    Wohoo! This Username Is Available.
+                 </div>
+                <div class="inputcomponent">
+                    <label for="">Short Bio*</label>
+                   <input type="text" class="input" name="" id="">
+                </div>
+                
+                
+               </form>
                 <button class="next-btn">Next 2</button>
             </div>
               
             <div id="div3" class="step">
-                <button class="done-btn">Finish</button>
+                <form action="">
+                    <div class="inputcomponent">
+                        <label for="">Location*</label>
+                       <input type="text" class="input" name="" id="">
+                    </div>
+                    <div class="inputcomponent">
+                        <label for="">Currency*</label>
+                       <input type="text" class="input" name="" id="">
+                    </div>
+                    <div class="inputcomponent">
+                        <label for="">Timezone*</label>
+                       <input type="text" class="input" name="" id="">
+                    </div>
+                </form>
+                <button id="Finish" class="done-btn">Finish</button>
             </div>              
         </div>
 

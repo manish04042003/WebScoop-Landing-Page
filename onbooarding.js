@@ -27,8 +27,44 @@ for(let i=0 ; i<nextBtn.length ; i++){
 // });
 
 document.querySelector('.done-btn').addEventListener('click', function() {
-    
-  // Perform action on Done button click
+  party.confetti(document.querySelector('#myModalCon'), {
+    /**
+     * Whether the debugging mode should be enabled.
+     */
+    debug: false,
+    count: party.variation.range(100, 600),
+    /**
+     * The amount of gravity to apply to particles in the scene, in pixels.
+     * Note that this value is positive by default, since the y-axis increases
+     * downwards in a DOM.
+     */
+    gravity: 500,
+    /**
+     * The z-index to place the DOM containers at.
+     */
+    zIndex: 99999,
+});
+ 
 });
 
 showStep(currentStep);
+
+
+// modal js 
+// Get the modal
+var modalcon = document.getElementById("myModalCon");
+
+// Get the button that opens the modal
+var btncon = document.getElementById("Finish");
+
+btncon.onclick = function() {
+  modalcon.style.display = "block";
+}
+window.onclick = function(event) {
+  if (event.target == modalcon) {
+    modalcon.style.display = "none";
+  }
+}
+
+
+
