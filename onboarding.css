@@ -132,10 +132,26 @@ input:focus {
   /* Modal Content/Box */
   .modal-content-Con {
     background-color: #fefefe;
-    width: 100%;
+    width: 95%;
     max-width: 35rem;
     padding: 20px;
     border: 1px solid #888;
     border-radius: 20px;
   }
+  .modalImage{
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .modalImage img{
+    width: 100%;
+  }
   
+  .boxImage{
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .boxImage img{
+    width: 100%;
+  }
