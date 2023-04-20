@@ -27,7 +27,7 @@ for(let i=0 ; i<nextBtn.length ; i++){
 // });
 
 document.querySelector('.done-btn').addEventListener('click', function() {
-  party.confetti(document.querySelector('#myModalCon'), {
+  party.confetti(document.querySelector('.modal-content-Con'), {
     /**
      * Whether the debugging mode should be enabled.
      */
@@ -58,7 +58,7 @@ var modalcon = document.getElementById("myModalCon");
 var btncon = document.getElementById("Finish");
 
 btncon.onclick = function() {
-  modalcon.style.display = "block";
+  modalcon.style.display = "flex";
 }
 window.onclick = function(event) {
   if (event.target == modalcon) {
