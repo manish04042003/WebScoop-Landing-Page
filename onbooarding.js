@@ -13,11 +13,17 @@ function showStep(index) {
 }
 
 const nextBtn = document.querySelectorAll('.next-btn')
-console.log(nextBtn.length)
 for(let i=0 ; i<nextBtn.length ; i++){
     nextBtn[i].addEventListener('click', function() {
         console.log('click')
       showStep(currentStep + 1);
+    });
+}
+const backBtn = document.querySelectorAll('.back-btn')
+for(let i=0 ; i<backBtn.length ; i++){
+  backBtn[i].addEventListener('click', function() {
+        console.log('click')
+      showStep(currentStep -1);
     });
 }
 
