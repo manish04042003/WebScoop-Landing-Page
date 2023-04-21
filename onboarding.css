@@ -45,6 +45,7 @@
     border-radius: 10px;
     /* max-width: 300px; */
     cursor: pointer;
+    border: 0;
   }
 
   #div2 form{

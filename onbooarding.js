@@ -27,7 +27,7 @@ for(let i=0 ; i<nextBtn.length ; i++){
 // });
 
 document.querySelector('.done-btn').addEventListener('click', function() {
-  party.confetti(document.querySelector('body'), {
+  party.confetti(document.querySelector('#myModalCon'), {
     /**
      * Whether the debugging mode should be enabled.
      */
